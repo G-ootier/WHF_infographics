@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Adherence Day 2026 – Survey Infographic</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --red:    #D42B2B;
+    --cream:  #F2EBE0;
+    --beige:  #EAE0D0;
+    --white:  #FFFFFF;
+    --dark:   #1C1C1C;
+    --mid:    #5C5248;
+    --rule:   #DDD4C4;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+  }
+
+  /* ─── PAGE WRAPPER ─── */
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+    background: var(--cream);
+  }
+
+  /* ─── HEADER ─── */
+  .header {
+    background: var(--white);
+    padding: 48px 52px 40px;
+    border-bottom: 3px solid var(--red);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .header-logo {
+    flex-shrink: 0;
+  }
+  .header-logo svg {
+    width: 64px;
+    height: 64px;
+  }
+  .header-text {}
+  .header-eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 8px;
+  }
+  .header-title {
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    color: var(--dark);
+  }
+  .header-title span { color: var(--red); }
+  .header-sub {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--mid);
+    margin-top: 8px;
+    font-style: italic;
+  }
+
+  /* ─── KEY MESSAGE BAND ─── */
+  .key-message {
+    background: var(--red);
+    padding: 24px 52px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .key-message-label {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.65);
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding-top: 2px;
+  }
+  .key-message-rule {
+    width: 2px;
+    background: rgba(255,255,255,0.3);
+    align-self: stretch;
+    flex-shrink: 0;
+  }
+  .key-message-text {
+    font-size: 13.5px;
+    color: white;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  .key-message-text strong { font-weight: 700; }
+
+  /* ─── SECTION WRAPPER ─── */
+  .section {
+    padding: 44px 52px;
+  }
+  .section-white { background: var(--white); }
+  .section-cream { background: var(--cream); }
+
+  /* ─── SECTION HEADER ─── */
+  .section-head {
+    margin-bottom: 30px;
+  }
+  .section-number-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .section-num-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--red);
+    flex-shrink: 0;
+  }
+  .section-num-text {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--red);
+  }
+  .section-title {
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+    color: var(--dark);
+  }
+  .section-title span { color: var(--red); }
+  .section-subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--mid);
+    margin-top: 4px;
+  }
+
+  /* ─── ANCHOR STATS ─── */
+  .stat-row {
+    display: grid;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  .cols-2 { grid-template-columns: 1fr 1fr; }
+  .cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+  .stat-card {
+    background: var(--white);
+    border-radius: 4px;
+    padding: 22px 20px;
+    border-top: 3px solid var(--dark);
+  }
+  .stat-card.red-top { border-top-color: var(--red); }
+  .stat-number {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--red);
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+  }
+  .stat-label {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--dark);
+    font-weight: 400;
+  }
+  .stat-label strong { font-weight: 700; }
+
+  /* ─── CONSEQUENCE STRIP ─── */
+  .consequence-strip {
+    display: flex;
+    background: var(--dark);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .consequence-item {
+    flex: 1;
+    padding: 14px 18px;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .consequence-item:last-child { border-right: none; }
+  .con-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--red);
+    flex-shrink: 0;
+  }
+  .con-text {
+    font-size: 11.5px;
+    color: rgba(255,255,255,0.85);
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  /* ─── REASONS ─── */
+  .reasons-wrap {
+    background: var(--white);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .reasons-head {
+    padding: 10px 20px;
+    background: var(--beige);
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--mid);
+  }
+  .reason-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--cream);
+  }
+  .reason-row:last-child { border-bottom: none; }
+  .reason-rank {
+    font-size: 11px;
+    font-weight: 900;
+    color: var(--red);
+    width: 28px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .reason-bar-wrap { flex: 1; }
+  .reason-text {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 6px;
+  }
+  .reason-bar {
+    height: 6px;
+    background: var(--cream);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .reason-fill {
+    height: 100%;
+    background: var(--red);
+    border-radius: 3px;
+  }
+  .reason-pct {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--red);
+    min-width: 44px;
+    text-align: right;
+    letter-spacing: -0.5px;
+  }
+
+  /* ─── DEMO GRID ─── */
+  .demo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 0;
+  }
+  .demo-card {
+    background: var(--white);
+    border-radius: 4px;
+    padding: 22px 24px;
+  }
+  .demo-title {
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 18px;
+  }
+
+  /* Pictograph rows */
+  .picto-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    margin-bottom: 14px;
+  }
+  .picto-row:last-child { margin-bottom: 0; }
+  .picto-figures {
+    display: flex;
+    gap: 3px;
+    flex-shrink: 0;
+  }
+  .picto-figures svg { display: block; }
+  .picto-info {
+    flex: 1;
+  }
+  .picto-pct {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+  .picto-pct.red { color: var(--red); }
+  .picto-pct.dark { color: var(--dark); }
+  .picto-label {
+    font-size: 11.5px;
+    color: var(--dark);
+    font-weight: 500;
+    margin-top: 3px;
+    line-height: 1.3;
+  }
+  .picto-sublabel {
+    font-size: 10px;
+    color: var(--mid);
+    font-weight: 400;
+    margin-top: 2px;
+  }
+  .picto-divider {
+    height: 1px;
+    background: var(--cream);
+    margin: 14px 0;
+  }
+
+  /* Gender visual */
+  .gender-visual {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
+  .gender-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .gender-figure .g-pct {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+  .gender-figure .g-pct.red { color: var(--red); }
+  .gender-figure .g-pct.muted { color: #B8AFA3; }
+  .gender-figure .g-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--dark);
+  }
+  .gender-note {
+    text-align: center;
+    font-size: 10.5px;
+    color: var(--mid);
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 6px;
+    padding-top: 12px;
+    border-top: 1px solid var(--cream);
+  }
+  .gender-note strong { font-weight: 700; color: var(--dark); }
+
+  /* ─── SECTION DIVIDER ─── */
+  .divider-band {
+    padding: 14px 52px;
+    background: var(--beige);
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--mid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+  .divider-band::before,
+  .divider-band::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  /* ─── GAP CARDS ─── */
+  .gap-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .gap-card {
+    background: var(--cream);
+    border-radius: 4px;
+    padding: 22px 20px;
+    border-left: 3px solid var(--red);
+  }
+  .gap-card-title {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--red);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .gap-stat-block {
+    margin-bottom: 10px;
+  }
+  .gap-stat-block:last-child { margin-bottom: 0; }
+  .gap-big-num {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--dark);
+    line-height: 1;
+    letter-spacing: -0.5px;
+  }
+  .gap-desc {
+    font-size: 11.5px;
+    color: var(--dark);
+    line-height: 1.45;
+    margin-top: 3px;
+    font-weight: 400;
+  }
+  .gap-desc strong { font-weight: 700; }
+  .gap-rule {
+    height: 1px;
+    background: var(--rule);
+    margin: 10px 0;
+  }
+  .gap-note {
+    font-size: 11.5px;
+    color: var(--mid);
+    line-height: 1.45;
+    font-weight: 400;
+  }
+  .gap-note strong { font-weight: 700; color: var(--dark); }
+
+  /* ─── SOLUTION CARDS ─── */
+  .solution-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .solution-card {
+    background: var(--cream);
+    border-radius: 4px;
+    padding: 26px 22px;
+    border-top: 3px solid var(--red);
+    position: relative;
+  }
+  .solution-icon {
+    margin-bottom: 14px;
+  }
+  .solution-icon svg {
+    display: block;
+  }
+  .solution-pillar {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 4px;
+  }
+  .solution-title {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: var(--dark);
+    margin-bottom: 14px;
+    line-height: 1.25;
+  }
+  .solution-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .solution-list li {
+    font-size: 12px;
+    line-height: 1.45;
+    color: var(--dark);
+    padding-left: 14px;
+    position: relative;
+    font-weight: 400;
+  }
+  .solution-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--red);
+  }
+
+  /* ─── FOOTER ─── */
+  .footer {
+    background: var(--dark);
+    padding: 20px 52px;
+    text-align: center;
+    font-size: 10.5px;
+    color: rgba(255,255,255,0.4);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  /* ─── STARBURST SVG ─── */
+  /* used inline in header */
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <!-- WHF-style starburst logo -->
+    <div class="header-logo">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="32" r="32" fill="#D42B2B"/>
+        <!-- starburst spokes -->
+        <g fill="white">
+          <rect x="30.5" y="4" width="3" height="13" rx="1.5"/>
+          <rect x="30.5" y="47" width="3" height="13" rx="1.5"/>
+          <rect x="4" y="30.5" width="13" height="3" rx="1.5"/>
+          <rect x="47" y="30.5" width="13" height="3" rx="1.5"/>
+          <rect x="30.5" y="4" width="3" height="13" rx="1.5" transform="rotate(45 32 32)"/>
+          <rect x="30.5" y="47" width="3" height="13" rx="1.5" transform="rotate(45 32 32)"/>
+          <rect x="30.5" y="4" width="3" height="13" rx="1.5" transform="rotate(90 32 32)"/>
+          <rect x="30.5" y="47" width="3" height="13" rx="1.5" transform="rotate(90 32 32)"/>
+          <rect x="30.5" y="4" width="3" height="13" rx="1.5" transform="rotate(22.5 32 32)"/>
+          <rect x="30.5" y="47" width="3" height="13" rx="1.5" transform="rotate(22.5 32 32)"/>
+          <rect x="30.5" y="4" width="3" height="13" rx="1.5" transform="rotate(67.5 32 32)"/>
+          <rect x="30.5" y="47" width="3" height="13" rx="1.5" transform="rotate(67.5 32 32)"/>
+          <rect x="30.5" y="4" width="3" height="13" rx="1.5" transform="rotate(112.5 32 32)"/>
+          <rect x="30.5" y="47" width="3" height="13" rx="1.5" transform="rotate(112.5 32 32)"/>
+          <rect x="30.5" y="4" width="3" height="13" rx="1.5" transform="rotate(157.5 32 32)"/>
+          <rect x="30.5" y="47" width="3" height="13" rx="1.5" transform="rotate(157.5 32 32)"/>
+          <!-- play button in center -->
+          <polygon points="28,25 28,39 41,32" fill="white"/>
+        </g>
+      </svg>
+    </div>
+    <div class="header-text">
+      <div class="header-eyebrow">World Adherence Day 2026</div>
+      <div class="header-title">Medication Adherence:<br><span>What Clinicians</span> Are Telling Us</div>
+      <div class="header-sub">Data based primarily on developed countries</div>
+    </div>
+  </div>
+
+  <!-- KEY MESSAGE -->
+  <div class="key-message">
+    <div class="key-message-label">Key<br>Message</div>
+    <div class="key-message-rule"></div>
+    <div class="key-message-text">
+      Medication non-adherence is widely recognised as a <strong>major threat to patient outcomes.</strong> Yet healthcare professionals consistently lack the <strong>time, training, tools, and system support</strong> needed to address it effectively in routine care.
+    </div>
+  </div>
+
+  <!-- ═══════════ SECTION 1 ═══════════ -->
+  <div class="section section-white">
+
+    <div class="section-head">
+      <div class="section-number-tag">
+        <div class="section-num-dot"></div>
+        <div class="section-num-text">Section 01</div>
+      </div>
+      <div class="section-title">The <span>Scale</span> of the Problem</div>
+      <div class="section-subtitle">How clinicians perceive non-adherence and why patients stop</div>
+    </div>
+
+    <div class="stat-row cols-2">
+      <div class="stat-card red-top">
+        <div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:12px">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" style="flex-shrink:0">
+            <circle cx="22" cy="22" r="22" fill="#D42B2B" opacity="0.1"/>
+            <path d="M22 10c-3 0-5.5 1-7.5 3s-3 4.5-3 7.5c0 6 10.5 14 10.5 14S32.5 26.5 32.5 20.5c0-3-1-5.5-3-7.5S25 10 22 10z" fill="#D42B2B" opacity="0.7"/>
+            <path d="M19 21l2.5 2.5L26 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="stat-number" style="margin-bottom:0">9 in 10</div>
+        </div>
+        <div class="stat-label"><strong>Healthcare professionals</strong> say medication non-adherence is a <strong>moderate or major health problem</strong></div>
+      </div>
+      <div class="stat-card red-top">
+        <div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:12px">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" style="flex-shrink:0">
+            <circle cx="22" cy="22" r="22" fill="#D42B2B" opacity="0.1"/>
+            <circle cx="16" cy="16" r="4" stroke="#D42B2B" stroke-width="1.8" fill="none"/>
+            <path d="M10 30c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#D42B2B" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <circle cx="28" cy="16" r="4" stroke="#D42B2B" stroke-width="1.8" fill="none"/>
+            <path d="M22 30c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#D42B2B" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <path d="M19 26h6" stroke="#D42B2B" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="2 2"/>
+          </svg>
+          <div class="stat-number" style="margin-bottom:0">65%</div>
+        </div>
+        <div class="stat-label">of clinicians see adherence as a <strong>shared responsibility</strong> between patient and clinician, not simply a matter of taking medication as prescribed</div>
+      </div>
+    </div>
+
+    <div class="consequence-strip">
+      <div class="consequence-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" stroke="#D42B2B" stroke-width="1.8"/><path d="M8 14s1.5 2 4 2 4-2 4-2" stroke="#D42B2B" stroke-width="1.8" stroke-linecap="round" transform="rotate(180 12 14)"/><circle cx="9" cy="10" r="1" fill="#D42B2B"/><circle cx="15" cy="10" r="1" fill="#D42B2B"/></svg>
+        <div class="con-text">Poorer patient outcomes</div>
+      </div>
+      <div class="consequence-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14" stroke="#D42B2B" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 21v-5h4v5" stroke="#D42B2B" stroke-width="1.8"/><rect x="9" y="9" width="2" height="2" fill="#D42B2B"/><rect x="13" y="9" width="2" height="2" fill="#D42B2B"/></svg>
+        <div class="con-text">Increased hospitalisations</div>
+      </div>
+      <div class="consequence-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="#D42B2B" stroke-width="1.8" fill="none"/><path d="M7 12l3 3 7-7" stroke="#D42B2B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0"/><line x1="8" y1="8" x2="16" y2="16" stroke="#D42B2B" stroke-width="1.5" stroke-linecap="round"/><line x1="16" y1="8" x2="8" y2="16" stroke="#D42B2B" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="con-text">Premature mortality</div>
+      </div>
+    </div>
+
+    <div class="reasons-wrap">
+      <div class="reasons-head">Top reasons patients stop taking medication</div>
+      <div class="reason-row">
+        <div class="reason-rank">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="13" fill="#D42B2B" opacity="0.08"/><path d="M9 15s2 3 5 3 5-3 5-3" stroke="#D42B2B" stroke-width="1.6" stroke-linecap="round"/><circle cx="10.5" cy="11" r="1" fill="#D42B2B"/><circle cx="17.5" cy="11" r="1" fill="#D42B2B"/></svg>
+        </div>
+        <div class="reason-bar-wrap">
+          <div class="reason-text">Patients stop when they feel better</div>
+          <div class="reason-bar"><div class="reason-fill" style="width:64%"></div></div>
+        </div>
+        <div class="reason-pct">64%</div>
+      </div>
+      <div class="reason-row">
+        <div class="reason-rank">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="13" fill="#D42B2B" opacity="0.08"/><circle cx="14" cy="11" r="4" stroke="#D42B2B" stroke-width="1.5" fill="none"/><path d="M9 20c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="#D42B2B" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M17 8l1-2.5" stroke="#D42B2B" stroke-width="1.3" stroke-linecap="round"/><path d="M19 9.5l2-1" stroke="#D42B2B" stroke-width="1.3" stroke-linecap="round"/><path d="M18.5 12l2.5 0" stroke="#D42B2B" stroke-width="1.3" stroke-linecap="round"/></svg>
+        </div>
+        <div class="reason-bar-wrap">
+          <div class="reason-text">Forgetfulness</div>
+          <div class="reason-bar"><div class="reason-fill" style="width:62%"></div></div>
+        </div>
+        <div class="reason-pct">62%</div>
+      </div>
+    </div>
+
+    <div class="demo-grid">
+
+      <!-- AGE CARD — pictograph people -->
+      <div class="demo-card">
+        <div class="demo-title">Who is most at risk: by age</div>
+
+        <div class="picto-row">
+          <!-- 4 red young-person silhouettes out of 10 = ~37% -->
+          <div class="picto-figures">
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#D42B2B"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#D42B2B" opacity="0.85"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#D42B2B"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#D42B2B" opacity="0.85"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#D42B2B"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#D42B2B" opacity="0.85"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#D42B2B" opacity="0.4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#D42B2B" opacity="0.2"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#DDD4C4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#DDD4C4"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#DDD4C4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#DDD4C4"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#DDD4C4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#DDD4C4"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#DDD4C4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#DDD4C4"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#DDD4C4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#DDD4C4"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#DDD4C4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#DDD4C4"/></svg>
+          </div>
+        </div>
+        <div class="picto-info" style="margin-bottom:14px">
+          <div class="picto-pct red">37%</div>
+          <div class="picto-label">Adults up to 24 years</div>
+          <div class="picto-sublabel">Highest risk group identified by clinicians</div>
+        </div>
+
+        <div class="picto-divider"></div>
+
+        <div class="picto-row">
+          <div class="picto-figures">
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#1C1C1C"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#1C1C1C" opacity="0.85"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#1C1C1C"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#1C1C1C" opacity="0.85"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#1C1C1C" opacity="0.5"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#1C1C1C" opacity="0.25"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#DDD4C4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#DDD4C4"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#DDD4C4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#DDD4C4"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#DDD4C4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#DDD4C4"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#DDD4C4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#DDD4C4"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#DDD4C4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#DDD4C4"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#DDD4C4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#DDD4C4"/></svg>
+            <svg width="22" height="40" viewBox="0 0 22 40"><circle cx="11" cy="6" r="5" fill="#DDD4C4"/><path d="M3 40V22a8 8 0 0 1 16 0v18" fill="#DDD4C4"/></svg>
+          </div>
+        </div>
+        <div class="picto-info">
+          <div class="picto-pct dark">28%</div>
+          <div class="picto-label">Middle-aged adults</div>
+        </div>
+      </div>
+
+      <!-- GENDER CARD — illustrated silhouettes -->
+      <div class="demo-card">
+        <div class="demo-title">Gender perception among clinicians</div>
+
+        <div class="gender-visual">
+          <!-- Male figure — large, red (68%) -->
+          <div class="gender-figure">
+            <svg width="72" height="100" viewBox="0 0 72 100">
+              <circle cx="36" cy="14" r="12" fill="#D42B2B"/>
+              <rect x="16" y="30" width="40" height="44" rx="6" fill="#D42B2B" opacity="0.85"/>
+              <rect x="20" y="74" width="12" height="26" rx="4" fill="#D42B2B" opacity="0.7"/>
+              <rect x="40" y="74" width="12" height="26" rx="4" fill="#D42B2B" opacity="0.7"/>
+              <rect x="6" y="34" width="10" height="28" rx="4" fill="#D42B2B" opacity="0.7"/>
+              <rect x="56" y="34" width="10" height="28" rx="4" fill="#D42B2B" opacity="0.7"/>
+            </svg>
+            <div class="g-pct red">68%</div>
+            <div class="g-label">Men</div>
+          </div>
+
+          <!-- Female figure — small, muted (3%) -->
+          <div class="gender-figure">
+            <svg width="48" height="68" viewBox="0 0 48 68">
+              <circle cx="24" cy="10" r="8.5" fill="#B8AFA3"/>
+              <path d="M12 24h24l-4 28H16L12 24z" fill="#B8AFA3" opacity="0.7"/>
+              <rect x="14" y="52" width="8" height="16" rx="3" fill="#B8AFA3" opacity="0.55"/>
+              <rect x="26" y="52" width="8" height="16" rx="3" fill="#B8AFA3" opacity="0.55"/>
+              <rect x="4" y="26" width="8" height="20" rx="3" fill="#B8AFA3" opacity="0.55"/>
+              <rect x="36" y="26" width="8" height="20" rx="3" fill="#B8AFA3" opacity="0.55"/>
+            </svg>
+            <div class="g-pct muted">3%</div>
+            <div class="g-label">Women</div>
+          </div>
+        </div>
+
+        <div class="gender-note"><strong>29%</strong> of clinicians see no difference between genders</div>
+      </div>
+
+    </div>
+
+  </div><!-- /section 1 -->
+
+  <div class="divider-band">The problem persists because the system is not equipped</div>
+
+  <!-- ═══════════ SECTION 2 ═══════════ -->
+  <div class="section section-cream">
+
+    <div class="section-head">
+      <div class="section-number-tag">
+        <div class="section-num-dot"></div>
+        <div class="section-num-text">Section 02</div>
+      </div>
+      <div class="section-title">The <span>System</span> Gap</div>
+      <div class="section-subtitle">Why healthcare systems are not equipped to tackle non-adherence</div>
+    </div>
+
+    <div class="gap-grid">
+
+      <!-- TIME -->
+      <div class="gap-card">
+        <div class="gap-card-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#D42B2B" stroke-width="2"/><path d="M12 7v5l3 3" stroke="#D42B2B" stroke-width="2" stroke-linecap="round"/></svg>
+          Limited Time
+        </div>
+        <div class="gap-stat-block">
+          <div class="gap-big-num">65%</div>
+          <div class="gap-desc">of clinicians spend <strong>10 minutes or less</strong> discussing adherence</div>
+        </div>
+        <div class="gap-rule"></div>
+        <div class="gap-note">Most consultations allocate only <strong>1 to 5 minutes</strong> to adherence. <strong>Long-term persistence</strong> is reported as the most challenging stage.</div>
+      </div>
+
+      <!-- TRAINING -->
+      <div class="gap-card">
+        <div class="gap-card-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 19V8l8-5 8 5v11" stroke="#D42B2B" stroke-width="2" stroke-linejoin="round"/><rect x="9" y="13" width="6" height="6" stroke="#D42B2B" stroke-width="2"/></svg>
+          Training Gaps
+        </div>
+        <div class="gap-stat-block">
+          <div class="gap-big-num">&gt; 50%</div>
+          <div class="gap-desc"><strong>unaware of adherence guidelines</strong></div>
+        </div>
+        <div class="gap-rule"></div>
+        <div class="gap-stat-block">
+          <div class="gap-big-num">&gt; 1 in 3</div>
+          <div class="gap-desc">received <strong>no formal training</strong> on adherence</div>
+        </div>
+        <div class="gap-rule"></div>
+        <div class="gap-stat-block">
+          <div class="gap-big-num">~1 in 10</div>
+          <div class="gap-desc">received <strong>both pre-service and in-service</strong> training</div>
+        </div>
+      </div>
+
+      <!-- TOOLS -->
+      <div class="gap-card">
+        <div class="gap-card-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="#D42B2B" stroke-width="2"/><path d="M8 20h8M12 18v2" stroke="#D42B2B" stroke-width="2" stroke-linecap="round"/></svg>
+          Underused Digital Tools
+        </div>
+        <div class="gap-stat-block">
+          <div class="gap-big-num">41%</div>
+          <div class="gap-desc">routinely use <strong>electronic alerts or digital systems</strong></div>
+        </div>
+        <div class="gap-rule"></div>
+        <div class="gap-stat-block">
+          <div class="gap-big-num">25%</div>
+          <div class="gap-desc"><strong>rarely use any digital tools</strong> to support adherence</div>
+        </div>
+        <div class="gap-rule"></div>
+        <div class="gap-stat-block">
+          <div class="gap-big-num">64%</div>
+          <div class="gap-desc">monitor adherence via <strong>objective clues</strong> such as refill history</div>
+        </div>
+      </div>
+
+      <!-- STRUCTURE -->
+      <div class="gap-card">
+        <div class="gap-card-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="5" r="2" stroke="#D42B2B" stroke-width="2"/><circle cx="5" cy="19" r="2" stroke="#D42B2B" stroke-width="2"/><circle cx="19" cy="19" r="2" stroke="#D42B2B" stroke-width="2"/><path d="M12 7v4M12 11l-5 6M12 11l5 6" stroke="#D42B2B" stroke-width="2" stroke-linecap="round"/></svg>
+          Fragmented Care
+        </div>
+        <div class="gap-stat-block">
+          <div class="gap-big-num">2 in 3</div>
+          <div class="gap-desc">routinely document adherence. <strong>1 in 3 do not.</strong></div>
+        </div>
+        <div class="gap-rule"></div>
+        <div class="gap-note">Adherence support is <strong>largely driven by individual clinicians</strong> rather than coordinated care teams, with no standardised protocols in place.</div>
+      </div>
+
+    </div><!-- /gap-grid -->
+
+  </div><!-- /section 2 -->
+
+  <div class="divider-band">Improving adherence requires action on four fronts</div>
+
+  <!-- ═══════════ SECTION 3 ═══════════ -->
+  <div class="section section-white">
+
+    <div class="section-head">
+      <div class="section-number-tag">
+        <div class="section-num-dot"></div>
+        <div class="section-num-text">Section 03</div>
+      </div>
+      <div class="section-title">The <span>Path</span> Forward</div>
+      <div class="section-subtitle">Four pillars for systemic change</div>
+    </div>
+
+    <div class="solution-grid">
+
+      <!-- TRAINING -->
+      <div class="solution-card">
+        <div class="solution-icon">
+          <!-- Graduation cap icon -->
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#D42B2B" opacity="0.08"/>
+            <path d="M20 12L8 17.5L20 23L32 17.5L20 12Z" stroke="#D42B2B" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
+            <path d="M12 19.5V25.5C12 25.5 15 28 20 28C25 28 28 25.5 28 25.5V19.5" stroke="#D42B2B" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <line x1="32" y1="17.5" x2="32" y2="23.5" stroke="#D42B2B" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="32" cy="24.5" r="1.5" fill="#D42B2B"/>
+          </svg>
+        </div>
+        <div class="solution-pillar">Pillar 01</div>
+        <div class="solution-title">Invest in Training</div>
+        <ul class="solution-list">
+          <li>Communication and motivational interviewing skills</li>
+          <li>Adherence assessment tools and techniques</li>
+          <li>Managing medication side-effects</li>
+          <li>Simplifying treatment regimens</li>
+        </ul>
+      </div>
+
+      <!-- TOOLS -->
+      <div class="solution-card">
+        <div class="solution-icon">
+          <!-- Tools / gear icon -->
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#D42B2B" opacity="0.08"/>
+            <path d="M20 15a5 5 0 1 0 0 10 5 5 0 0 0 0-10z" stroke="#D42B2B" stroke-width="1.8" fill="none"/>
+            <path d="M20 10v3M20 27v3M10 20h3M27 20h3" stroke="#D42B2B" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M13.2 13.2l2.1 2.1M24.7 24.7l2.1 2.1M13.2 26.8l2.1-2.1M24.7 15.3l2.1-2.1" stroke="#D42B2B" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="solution-pillar">Pillar 02</div>
+        <div class="solution-title">Standardise Tools and Protocols</div>
+        <ul class="solution-list">
+          <li>Clear, system-wide adherence protocols</li>
+          <li>Better digital integration into clinical workflows</li>
+          <li>Structured care pathways for long-term conditions</li>
+        </ul>
+      </div>
+
+      <!-- TEAMS -->
+      <div class="solution-card">
+        <div class="solution-icon">
+          <!-- People / team icon -->
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#D42B2B" opacity="0.08"/>
+            <circle cx="20" cy="15" r="3.5" stroke="#D42B2B" stroke-width="1.8" fill="none"/>
+            <path d="M13 28c0-3.9 3.1-7 7-7s7 3.1 7 7" stroke="#D42B2B" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <circle cx="12" cy="17" r="2.5" stroke="#D42B2B" stroke-width="1.6" fill="none"/>
+            <path d="M7 28c0-2.8 2.2-5 5-5" stroke="#D42B2B" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+            <circle cx="28" cy="17" r="2.5" stroke="#D42B2B" stroke-width="1.6" fill="none"/>
+            <path d="M33 28c0-2.8-2.2-5-5-5" stroke="#D42B2B" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <div class="solution-pillar">Pillar 03</div>
+        <div class="solution-title">Build Coordinated Care Teams</div>
+        <ul class="solution-list">
+          <li>Dedicated adherence roles within multidisciplinary teams</li>
+          <li>Sustainable financing for adherence support functions</li>
+          <li>Strong managerial commitment and clinical leadership</li>
+        </ul>
+      </div>
+
+      <!-- PATIENTS -->
+      <div class="solution-card">
+        <div class="solution-icon">
+          <!-- Heart + person icon -->
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#D42B2B" opacity="0.08"/>
+            <circle cx="20" cy="14" r="3" stroke="#D42B2B" stroke-width="1.8" fill="none"/>
+            <path d="M14 27c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#D42B2B" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <path d="M20 20.5c0 0-4-2.5-4-5a2 2 0 0 1 4 0 2 2 0 0 1 4 0c0 2.5-4 5-4 5z" fill="#D42B2B" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="solution-pillar">Pillar 04</div>
+        <div class="solution-title">Put Patients at the Centre</div>
+        <ul class="solution-list">
+          <li>Help patients understand their condition and treatment benefits</li>
+          <li>Address barriers specific to high-risk groups: young adults and men</li>
+          <li>Support long-term engagement beyond initial prescription</li>
+        </ul>
+      </div>
+
+    </div><!-- /solution-grid -->
+
+  </div><!-- /section 3 -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    World Adherence Day 2026 &nbsp;·&nbsp; Data based primarily on developed countries &nbsp;·&nbsp; world-heart-federation.org
+  </div>
+
+</div><!-- /page -->
+</body>
+</html>
